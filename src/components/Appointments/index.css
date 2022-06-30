@@ -1,0 +1,128 @@
+/* Write your CSS here */
+.appointment-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.appointment-card {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 35px;
+}
+.heading {
+  font-family: 'Roboto';
+  color: #171f46;
+  font-size: 28px;
+}
+.title {
+  font-family: 'Roboto';
+  color: #b5b7c4;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.inputText {
+  font-family: 'Roboto';
+  color: #b5b7c4;
+  font-size: 12px;
+  color: #171f46;
+  max-width: 320px;
+  border: 1px solid #b5b7c4;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+
+.add-btn {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px;
+  width: 70px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .image {
+    display: block;
+    width: 350px;
+    margin-top: 20px;
+  }
+  .appointment-card {
+    max-width: 1124px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .inputText {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.container-form {
+  display: flex;
+  justify-content: space-around;
+}
+.hrLine {
+  border: 1px solid #b5b7c4;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.starred-btn {
+  border: none;
+  font-size: 12px;
+  padding: 5px;
+  font-family: 'Roboto';
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  width: 70px;
+  height: 30px;
+}
+.filter-filled {
+  color: #ffffff;
+  background-color: #8b5cf6;
+}
+.filter-empty {
+  color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+}
+.appointment-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.appointment-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .appointment-list-container {
+    flex-direction: row;
+  }
+  .appointment-board {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
